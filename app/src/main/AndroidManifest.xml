@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.feed.mercyapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cancer Alliance"
+        android:roundIcon="@drawable/canceralliance"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+        </activity>
+        <activity android:name=".About">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".About" />
+        </activity>
+        <activity
+            android:name=".menu"
+            android:label="@string/title_activity_menu" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SingleFeedActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SingleFeedActivity" />
+        </activity>
+        <activity android:name=".AdminActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".AdminActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.FeedUploadActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EventUploadActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".adminMenu"
+            android:label="@string/title_activity_admin_menu" />
+        <activity android:name=".PartnersActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".PartnersActivity" />
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Login2Activity"></activity>
+    </application>
+
+</manifest>

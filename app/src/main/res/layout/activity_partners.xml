@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.feed.mercyapp.PartnersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+
+        android:weightSum="1"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="1dp">
+        android:textStyle="bold" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarPartner"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Our partners"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="15dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="0dp"
+                android:columnCount="2"
+                android:numColumns="2"
+                android:rowCount="5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.491">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/palliativeCareCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintLeft_toLeftOf="@+id/nhifCard"
+                    app:layout_constraintRight_toRightOf="@+id/safePregnancyCard"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/palliativeCareImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/amref" />
+
+                        <TextView
+                            android:id="@+id/palliativeCareText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="AMREF AFRICA"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/CbhisCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/CbhisImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/takeda" />
+
+                        <TextView
+                            android:id="@+id/CbhisText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="TAKEDA"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/outreachCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintHorizontal_bias="0.372"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/diseaseSurvailanceCard"
+                    app:layout_constraintTop_toBottomOf="@+id/omnibusCard">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/outreachImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.71"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/nairobihospital" />
+
+                        <TextView
+                            android:id="@+id/outreachText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="NAIROBI HOSPITAL"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/diseaseSurvailanceCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ncdCard">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/diseaseSurvailanceImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/uon" />
+
+                        <TextView
+                            android:id="@+id/diseaseSurvailanceText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="UNIVERSITY OF NAIROBI"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/omnibusCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/diseaseSurvailanceCard"
+                    app:layout_constraintTop_toBottomOf="@+id/CbhisCard">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/omnibusImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/kemri" />
+
+                        <TextView
+                            android:id="@+id/omnibusText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="KEMRI"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ncdCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toRightOf="@+id/CbhisCard"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/ncdImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/mpshah" />
+
+                        <TextView
+                            android:id="@+id/ncdText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="MPSHAH"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/safePregnancyCard"
+                    android:layout_width="146dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/safePregnancyImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.62"
+                            android:padding="15dp"
+                            app:srcCompat="@drawable/kencasa" />
+
+                        <TextView
+                            android:id="@+id/safePregnancyText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.42"
+                            android:gravity="center"
+                            android:text="KENCANSA"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </GridLayout>
+</ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "513357466078",
+    "firebase_url": "https://cancer-c8e34.firebaseio.com",
+    "project_id": "cancer-c8e34",
+    "storage_bucket": "cancer-c8e34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513357466078:android:55ee20f622ed1546",
+        "android_client_info": {
+          "package_name": "app.feed.mercyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513357466078-0vn6crpf8mrl5eurtkchd2dtaic6u43o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.feed.mercyapp",
+            "certificate_hash": "eca417da51ac01fa58d15fb85abb2bd20eb7356f"
+          }
+        },
+        {
+          "client_id": "513357466078-3ceblu8d4uto24okteoeadcl94jn3r0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwxWuaQAY-HwJ3HS-hIcGCNqs8mL-nTK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513357466078-3ceblu8d4uto24okteoeadcl94jn3r0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
